@@ -47,4 +47,4 @@ Autonomous Technologies company.
 ## Languages
 ***
 * Russian (native)
-* English (A2)
+* English (A1)
