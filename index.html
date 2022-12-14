@@ -15,8 +15,8 @@
         <header class="header">
             <nav>
                 <ul>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">My Projects</a></li>
+                    <li><a href="#descr">About Me</a></li>
+                    <li><a href="#my-proj">My Projects</a></li>
                     <li><a href="">Skills</a></li>
                     <li><a href="">Code Examples</a></li>
                     <li><a href="">Experience</a></li>
@@ -27,8 +27,9 @@
         <main class="content-wrapper">
             <div class="about-wrapper">
                 <div class="main-text">
-                    <h1>Hello, I'am <span class="name">Sergey Lihachev</span>.<br> I'am a web developer.</h1>
-                    <div class="descr">If you are looking for a responsible and qualified web developer, then I will be very glad to our productive cooperation!</div>
+                    <h2 id="descr" class="some-info">Hello, some info <span>about me:</span></h2>
+                    <h1>My name is <span class="name">Sergey Lihachev</span>.<br> I'am a web developer.</h1>
+                    <h2 class="descr">If you are looking for a responsible and qualified web developer, then I will be very glad to our productive cooperation!</h2>
                 </div>
                 <div class="wrapper-card">
                     <div class="card">
@@ -56,7 +57,23 @@
                 </div>
             </div>
             <div class="my-projects-wrapper">
-                <h2>my Projects</h2>
+                <div class="main-button">
+                    <button id="my-proj">
+                        <div class="wave"></div>
+                        <span class="button-text">My Projects</span>
+                    </button>
+                </div>
+                <div class="card-block">
+                    <div class="project-card">
+                        <a href="https://www.sahmik.com" target="_blank"><img class="project-card-img" src="./img/Sahmik.png" alt="card-img">
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://liha4ini.github.io/gh_pages/" target="_blank">
+                            <img class="project-card-img" src="./img/Foto.jpg" alt="card-img">
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="my-skills-wrapper">
                 <h2>my skills</h2>
