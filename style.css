@@ -70,7 +70,7 @@ body {
 
 .content-wrapper {
     margin: 0 auto;
-    height: 2000px;
+    height: 4000px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -229,11 +229,11 @@ h1 {
     height: 1800px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
     border-bottom: 1px solid rgb(184, 163, 163);
     padding-top: 120px;
+    /* background: linear-gradient(45deg, #636363, #000000); */
 }
 
 .main-button {
@@ -332,5 +332,144 @@ button .wave:before {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+
+/* my skills block */
+
+.my-skills-wrapper {
+    max-height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(184, 163, 163);
+    padding-top: 120px;
+}
+
+.container {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0 80px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.progress {
+    cursor: pointer;
+    background: #111;
+    height: 35px;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 70px;
+    padding: 6px;
+}
+
+.fill {
+    color: rgb(229, 219, 219);
+    font-size: 50px;
+    font-weight: 800;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.fill:hover {
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+  
+.progress:hover .fill {
+    animation-play-state: running;
+}
+
+.progress:hover .number {
+    transform: translateY(-40px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.progress:nth-child(1) .fill {
+    background-color: rgb(89, 89, 220);
+    width: 80%;
+}
+
+.progress:nth-child(2) .fill {
+    background-color: rgb(89, 89, 220);
+    width: 55%;
+}
+
+.progress:nth-child(3) .fill {
+    background-color: rgb(89, 89, 220);
+    width: 45%;
+}
+
+.progress .number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.progress .fill {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+    background-size: 40px;
+    border-radius: 5px;
+    animation: move 0.5s linear infinite paused;
+    height: 100%;
+}
+
+@keyframes move {
+    100% {
+        background-position: 40px 0;
+    }
+}
+
+
+/* my code wrapper */
+
+.my-code-wrapper {
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(184, 163, 163);
+    padding-top: 120px;
+}
+
+/* my experience block */
+
+.my-experience-wrapper {
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(184, 163, 163);
+    padding-top: 120px;
+}
+
+/* my contact block */
+
+.my-contacts-wrapper {
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(184, 163, 163);
+    padding-top: 120px;
 }
   
