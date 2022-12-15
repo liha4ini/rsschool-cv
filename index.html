@@ -18,8 +18,8 @@
                     <li><a href="#descr">About Me</a></li>
                     <li><a href="#my-proj">My Projects</a></li>
                     <li><a href="#my-skills">Skills</a></li>
-                    <li><a href="">Code Examples</a></li>
-                    <li><a href="">Experience</a></li>
+                    <li><a href="#my-code">Code Examples</a></li>
+                    <li><a href="#my-education">Experience & Education</a></li>
                     <li><a href="">Contacts</a></li>
                 </ul>
             </nav>
@@ -100,25 +100,80 @@
             </div>
             <div class="my-code-wrapper">
                 <div class="main-button">
-                    <button id="my-proj">
+                    <button id="my-code">
                         <div class="wave"></div>
                         <span class="button-text">My Code</span>
                     </button>
                 </div>
+                <div class="code-section">
+                    <pre>
+                        <code>
+                            document.addEventListener('click', (event) => {
+                                const type = event.target.dataset.type
+                              
+                                if (type === 'lock') {
+                                  const node =
+                                    event.target.tagName.toLowerCase() === 'i'
+                                      ? event.target
+                                      : event.target.children[0]
+                              
+                                  node.classList.toggle('fa-lock-open')
+                                  node.classList.toggle('fa-lock')
+                                } else if (type === 'copy') {
+                                  copyToClickboard(event.target.textContent)
+                                }
+                            })
+                        </code>
+                    </pre>
+                    <pre>
+                        <code>
+                            function slidesPlugin(numSlide) {
+                                const slides = document.querySelectorAll('.slide');
+                            
+                                slides[numSlide].classList.add('active')
+                            
+                                for (const item of slides) {
+                                    item.addEventListener('click', () => {
+                                        clearActiveClasses();
+                                        item.classList.add('active');
+                                    })
+                                }
+                            
+                                function clearActiveClasses() {
+                                    slides.forEach((slide) => {
+                                        slide.classList.remove('active');
+                                    })
+                                }
+                            }
+                            
+                            slidesPlugin(3)
+                    </code>
+                    </pre>
+                </div>
             </div>
             <div class="my-experience-wrapper">
                 <div class="main-button">
-                    <button id="my-proj">
+                    <button id="my-education">
                         <div class="wave"></div>
                         <span class="button-text">My Experience</span>
                     </button>
+                </div>
+                <div class="exp-info">
+                    <span class="exp-descr">My Education:</span>
+                    <ul class="exp-list">
+                        <li>Chernihiv Law College</li>
+                        <li>Kyiv Academy of International Law</li>
+                        <li>IT courses in Dnipro</li>
+                    </ul>
+                    <span class="exp-descr">My Experience:</span>
+                    <span class="exp-text">I have one year of commercial development experience in the IT industry. I worked as a trainee and helped develop this app - <a href="https://apps.apple.com/ru/app/sahmik/id1077795800?l=uk">Sahmik by Autonomous Technologies.</a>It was a very rewarding experience for me. I saw and participated in all stages of the development of a large commercial application.</span>
                 </div>
             </div>
             <div class="my-contacts-wrapper">
                 <div class="main-button">
                     <button id="my-proj">
                         <div class="wave"></div>
-                        <span class="button-text">My Contact</span>
+                        <span class="button-text">My Contacts</span>
                     </button>
                 </div>
             </div>
